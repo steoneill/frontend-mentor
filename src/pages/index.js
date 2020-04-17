@@ -1,21 +1,41 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import FrontendLogo from "../images/frontendMentorLogo"
+import styled from "styled-components"
+
+let Container = styled.div`
+  background: white;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  margin: 40px auto;
+  padding: 30px 15px;
+
+  h1 {
+    color: #2a4365;
+  }
+
+  svg {
+    margin: 0 auto;
+  }
+`
+
+let AppWrapper = styled.section`
+  background: #edf2f7;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+`
 
 const IndexPage = () => (
-  <Layout>
+  <AppWrapper>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+    <Container>
+      <FrontendLogo />
+      <h1>
+        Frontend Mentor projects by{" "}
+        <a href="https://steoneill.dev">Ste O'Neill</a>
+      </h1>
+    </Container>
+  </AppWrapper>
 )
 
 export default IndexPage
