@@ -10,7 +10,7 @@ let Card = styled.section`
 let CardTop = styled.div`
   position: absolute;
   border-radius: 0 5px 5px 0;
-  background: ${p => console.log(p) || p.theme[p.type]};
+  background: ${p => p.theme[p.type]};
   top: 0;
   left: 0;
   width: 100%;
@@ -21,6 +21,8 @@ let CardTop = styled.div`
 let CardContent = styled.div`
   display: flex;
   flex-direction: column;
+  color: ${p => p.theme.textPrimary};
+  
 `
 
 export let CardComponent = ({ type }) => (

@@ -8,6 +8,7 @@ let Container = styled.div`
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   margin: 40px auto;
   padding: 30px 15px;
+  width: 75vw;
 
   h1 {
     color: #2a4365;
