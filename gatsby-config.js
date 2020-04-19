@@ -1,3 +1,5 @@
+//frontendmentor.steoneill.dev/projects/social/
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
